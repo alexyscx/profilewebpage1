@@ -1,0 +1,172 @@
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav pictures"
+        "nav about-me-section"
+        "nav values-section"
+        "nav pepeha-section"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    gap: 10px;
+}
+
+#header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#nav {
+    grid-area: nav;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#nav a {
+    color: gainsboro;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 17.5px;
+    text-decoration: none;
+}
+
+#pictures {
+    grid-area: pictures;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5E6E6E;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pictures img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #2E3939;
+    border-radius: 10px;
+}
+
+#about-me-section {
+    grid-area: about-me-section;
+    display: grid;
+    grid-template-areas:
+        "about-me-text about-me-picture";
+    grid-template-columns: 1fr 1fr;
+    background-color: #5E6E6E;
+    color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#about-me-text {
+    grid-area: about-me-text;
+    text-align: center;
+    font-size: 20px;
+    padding-right: 20px; 
+}
+
+#about-me-picture {
+    grid-area: about-me-picture;
+    text-align: center;
+}
+
+#about-me-picture img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #2E3939;
+    
+}
+
+#values-section {
+    grid-area: values-section;
+    display: grid;
+    grid-template-areas:
+        "values-text values-picture";
+    grid-template-columns: 1fr 1fr;
+    background-color: #5E6E6E;
+    color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#values-picture {
+    grid-area: values-picture;
+    text-align: center;
+}
+
+#values-picture img {
+    width: 400px; 
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #2E3939;
+}
+
+#values-text {
+    grid-area: values-text;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+
+
+#pepeha-section {
+    grid-area: pepeha-section;
+    display: grid;
+    grid-template-areas:
+        "culture-text pepeha";
+    grid-template-columns: 1fr 1fr;
+    background-color: #5E6E6E;
+    color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#pepeha {
+    grid-area: pepeha;
+    text-align: center;
+}
+
+#pepeha img {
+    width: 400px; 
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #2E3939;
+}
+
+#culture-text {
+    grid-area: culture-text;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+
+#footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
